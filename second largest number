@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+    int a,b,c;
+    
+    printf("enter a number");
+    printf("enter a number");
+    printf("enter a number");
+    
+
+    if(a>b&&a>c)
+    {
+        if(b>c)
+        printf("%d",b);
+        else
+        printf("%d",c);
+    }
+    else if(b>c&&b>a)
+    {
+        if(a>c)
+        printf("%d",a);
+        else
+        printf("%d",b);
+    }
+}
