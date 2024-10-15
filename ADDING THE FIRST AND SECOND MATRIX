@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int a[3][3];
+    int b[3][3];
+    int c[3][3];
+    printf("enter elements of first matrix");
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<=2;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+        printf("enter elements of second matrx");
+        for(int j=0;j<=2;j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+
+    }
+    printf("==============FIRST MATRIX=============");
+    printf("\n");
+    for(int i=0;i<=2;i++)
+    {
+        for(int j=0;j<=2;j++)
+        {
+            printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("===============SEECOND MATRIX==========");
+
+    printf("\n");
+    for(int i=0;i<=2;i++)
+    {
+        for(int j=0;j<=2;j++)
+        {
+            printf("%d",b[i][j]);
+        }
+        printf("\n");
+    }
+    for(int i=0;i<=2;i++)
+    {
+        for(int j=0;j<=2;j++)
+        {
+            c[i][j]=a[i][j]+b[i][j];
+        }
+    }
+printf("the sum of matrix is.....");
+}
+
+
