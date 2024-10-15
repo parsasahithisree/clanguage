@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[15]={14,2,4,8,13,1,3,6,5,7,9,10,12};
+    int sum=(15*16)/2;
+    int tot=0;
+    for(int i=0;i<14;i++)
+    {
+        tot=tot+a[i];
+    }
+    printf("the missing number is %d",(sum-tot));
+
+}
