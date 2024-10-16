@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a[20];
+int1;
+printf (" enter length of array");
+scanf("%d",&l);
+printf("enter %d no of elements", l) ;
+for(int I=0; I<l;I++) 
+{
+scanf("%d", &a[I]) ;
+}
+for(int I=0;I<l;I++) 
+{
+scanf("%d", &a[I]) ;
+}
+int max=a[0];
+int temp;
+for(int j=1; j<l; j++) 
+{
+if(max<a[j]) 
+{
+max=a[j];
+}
+}
+printf (" the largest num is%d", max) ;
+}
