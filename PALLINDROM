@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<string.h>
+void main()
+{
+    char a[20]="amma";
+    int l=strlen(a)-1;
+    for(int i=0,j=l;i<=j;i++,j--)
+    {
+        if(a[i]!=a[j])
+        {
+            printf("it is not pallindrome");
+            return;
+        }
+    }
+    printf("it is pallindrome");
+}
