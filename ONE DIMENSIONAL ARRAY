@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdio.h>
+int addarray(int a1[],int a2[]);
+int addarray(int a1[],int a2[])
+{
+    int res[50];
+    for(int i=0;i<5;i++)
+    {
+        res[i]=a1[i]+a2[i];
+        printf("%d ",res[i]);
+    }
+}
+int main()
+{
+    int a[5]={1,2,3,4,5};
+    int b[5]={1,2,3,4,5};
+    addarray(a,b);
+    
+}
