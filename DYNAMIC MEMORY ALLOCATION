@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int *p,*array,n;
+    p=(int*)malloc(n* sizeof(int));
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    scanf("%d",array+i);
+    return 0;
+
+}
