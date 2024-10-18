@@ -1,0 +1,19 @@
+#include<stdio.h>
+int swap(int *n,int *m);
+int main()
+{
+    int *p,*q,a=5,b=4;
+    p=&a;
+    q=&b;
+    printf("%d and %d\n",a,b);
+    printf("%p\n",p);
+    printf("%d\n",q);
+    swap(&a,&b);
+}
+int swap(int *n,int *m)
+{
+   int temp;
+   temp=*n;
+   *n=*m;
+   *m=temp;
+}
