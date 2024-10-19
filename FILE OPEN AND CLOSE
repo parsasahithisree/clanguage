@@ -1,1 +1,9 @@
+#include<stdio.h>
+void main()
+{
+FILE *ptr=fopen("document.txt","r");
+if(ptr==NULL)
+printf("nothing in it");
+fclose(ptr);
+}
 
