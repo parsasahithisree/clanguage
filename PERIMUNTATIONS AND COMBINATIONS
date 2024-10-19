@@ -1,0 +1,29 @@
+#include <stdio.h>
+long factorial(int n) {
+    long fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+
+long permutations(int n, int r) {
+    return factorial(n) / factorial(n - r);
+}
+
+int main() {
+    int chairs, students;
+    printf("Enter number of chairs: ");
+    scanf("%d", &chairs);
+    printf("Enter number of students: ");
+    scanf("%d", &students);
+
+
+    if (chairs < students) {
+        printf("Number of chairs cannot be less than students.");
+    } else {
+
+        long perm = permutations(chairs, students);
+        printf("Number of permutations: %ld\n", perm);
+    }
+}
