@@ -1,0 +1,26 @@
+#include <stdio.h>
+void fibonacci(int n) {
+    int num1 = 0, num2 = 1;
+   printf("Fibonacci Series: ");
+    printf("%d %d ", num1, num2);
+    for (int i = 3; i <= n; i++) {
+        int next = num1 + num2;
+        printf("%d ", next);
+        num1 = num2;
+        num2 = next;
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+    if (n <= 0) {
+        printf("Enter a positive integer.");
+    } else {
+        fibonacci(n);
+    }
+
+ 
+}
+
